@@ -1,0 +1,21 @@
+{
+  "name": "Terraform Development Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/terraform:1": {
+      "version": "latest"
+    },
+    "ghcr.io/dhoeric/features/terraform-docs:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "hashicorp.terraform"
+      ]
+    }
+  },
+  "postCreateCommand": "",
+  "remoteUser": "vscode"
+}
